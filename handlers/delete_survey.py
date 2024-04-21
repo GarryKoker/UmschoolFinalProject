@@ -1,6 +1,5 @@
 import telebot
-from main import bot
-from main import *
+from init_bot import bot
 from config import admins_list
 
 @bot.message_handler(func = lambda message: message.text == "Удаление опроса")

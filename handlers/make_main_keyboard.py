@@ -1,8 +1,6 @@
 import telebot
-from main import bot
 from telebot import types
-from main import admins_list
-import main
+from config import admins_list
 
 def make_main_keyboard(id):
     

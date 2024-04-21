@@ -1,17 +1,11 @@
-import telebot
-from telebot import types
-from check_main_statistick import *
-from check_main_statistick import *
-from create_survey import *
-from delete_survey import *
-from make_main_keyboard import *
-from start import *
-from taking_survey import *
-from config import TOKEN
 from init_bot import bot
+import telebot
+from handlers import register_handlers
 
 if __name__ == "__main__":
 
+    register_handlers()
+    
     print("Бот запущен")
 
     bot.add_custom_filter(telebot.custom_filters.StateFilter(bot))

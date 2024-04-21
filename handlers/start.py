@@ -1,8 +1,6 @@
 import telebot
-from telebot import types
-from main import bot
+from init_bot import bot
 from make_main_keyboard import make_main_keyboard
-import main
 
 @bot.message_handler(commands=["start","Start"])
 def start(message: telebot.types.Message):
